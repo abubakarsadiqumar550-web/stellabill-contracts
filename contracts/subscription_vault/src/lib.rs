@@ -3384,7 +3384,6 @@ impl SubscriptionVault {
     }
 
 
-
     /// Internal ID allocator.
     fn _next_id(env: &Env) -> Result<u32, Error> {
         let current: u32 = env
@@ -3477,6 +3476,9 @@ mod test_auto_pause_threshold;
 
 #[cfg(test)]
 mod test_admin_auto_pause_threshold;
+
+#[cfg(test)]
+mod test_admin_get_token;
 
 #[cfg(test)]
 mod test_admin_get_token;
